@@ -7,11 +7,10 @@ import app.revanced.patcher.patch.BytecodePatch
 import app.revanced.patcher.patch.annotation.CompatiblePackage
 import app.revanced.patcher.patch.annotation.Patch
 import app.revanced.patches.com.sillens.shapeupclub.premium.fingerprints.CheckPremiumFingerprint
-import app.revanced.patches.nyx.misc.pro.fingerprints.CheckProFingerprint
 
 @Patch(
     name = "Unlock premium",
-    compatiblePackages = [CompatiblePackage("com.sillens.shapeupclub", ["16.2.0"])]
+    compatiblePackages = [CompatiblePackage("com.sillens.shapeupclub", ["16.1.1"])]
 )
 @Suppress("unused")
 object UnlockPremiumPatch : BytecodePatch(setOf(CheckPremiumFingerprint)) {
